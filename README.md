@@ -1,36 +1,77 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# ♻️ Conecta Bragança — Pontos de Doação
 
-## Getting Started
+**Conecta Bragança** é uma plataforma colaborativa desenvolvida para facilitar a doação e distribuição de itens essenciais (alimentos, roupas, remédios) em Bragança Paulista. O projeto permite que doadores cadastrem pontos de apoio e que cidadãos encontrem ajuda de forma rápida e intuitiva através de um mapa interativo.
 
-First, run the development server:
+---
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## 🎓 Projeto Acadêmico
+Este sistema foi desenvolvido como parte integrante das atividades acadêmicas da **UNIASSELVI**.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+*   **Desenvolvedor:** Lucas Alves
+*   **Instituição:** UNIASSELVI
+*   **Ano:** 2026
+*   **Localidade:** Bragança Paulista, SP
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+---
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🚀 Funcionalidades Principais
 
-## Learn More
+-   **📍 Mapa Interativo:** Localização em tempo real de pontos de doação utilizando Leaflet.
+-   **🔐 Sistema de Perfis (RBAC):** 
+    -   **Doador:** Pode cadastrar, editar e excluir seus próprios pontos de doação.
+    -   **Recebedor:** Foco na navegação e busca de auxílio.
+-   **🕒 Gestão de Horários:** Cadastro detalhado de dias e horários de funcionamento de cada ponto.
+-   **🔍 Busca Inteligente:** Integração com a API Nominatim para geolocalização e busca de endereços.
+-   **📱 Design Responsivo:** Experiência otimizada para dispositivos móveis e desktops.
+-   **🌓 Dark Mode:** Interface moderna e confortável para o usuário.
 
-To learn more about Next.js, take a look at the following resources:
+---
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## 🛠️ Tecnologias Utilizadas
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+-   **Frontend:** [Next.js 16 (App Router)](https://nextjs.org/)
+-   **Estilização:** [Tailwind CSS](https://tailwindcss.com/)
+-   **Banco de Dados & Auth:** [Supabase](https://supabase.com/)
+-   **Mapas:** [Leaflet](https://leafletjs.com/)
+-   **Validação:** [Zod](https://zod.dev/)
+-   **Ícones:** [Lucide React](https://lucide.dev/)
 
-## Deploy on Vercel
+---
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+## ⚙️ Instalação e Execução
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+Para rodar o projeto localmente:
+
+1.  **Clone o repositório:**
+    ```bash
+    git clone https://github.com/lucasalves3733/conecta-braganca.git
+    ```
+
+2.  **Instale as dependências:**
+    ```bash
+    npm install
+    ```
+
+3.  **Configure as variáveis de ambiente:**
+    Crie um arquivo `.env.local` com suas chaves do Supabase:
+    ```env
+    NEXT_PUBLIC_SUPABASE_URL=sua_url
+    NEXT_PUBLIC_SUPABASE_ANON_KEY=sua_chave_anon
+    SUPABASE_SERVICE_ROLE_KEY=sua_chave_service_role
+    NEXT_PUBLIC_SITE_URL=http://localhost:3000
+    ```
+
+4.  **Inicie o servidor de desenvolvimento:**
+    ```bash
+    npm run dev
+    ```
+
+---
+
+## 📄 Licença
+
+Este projeto foi desenvolvido para fins estritamente acadêmicos.
+
+---
+
+> "Conectando quem quer ajudar com quem precisa de apoio." ♻️🤝🌍
