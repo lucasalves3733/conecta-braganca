@@ -16,6 +16,10 @@ export type PontoColeta = {
   latitude: number
   longitude: number
   categoria_id: string
+  user_id: string
+  horario_inicio: string
+  horario_fim: string
+  dias_semana: string
   created_at: string
   categorias?: Categoria
 }
