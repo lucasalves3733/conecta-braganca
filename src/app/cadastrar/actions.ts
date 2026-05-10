@@ -26,7 +26,7 @@ export async function cadastrarPonto(formData: FormData) {
 
   const parsed = pontoSchema.safeParse(parseForm(formData))
   if (!parsed.success) {
-    return { error: parsed.error.errors[0].message }
+    return { error: parsed.error.issues[0].message }
   }
 
   const { error } = await supabase
@@ -47,7 +47,7 @@ export async function editarPonto(id: string, formData: FormData) {
 
   const parsed = pontoSchema.safeParse(parseForm(formData))
   if (!parsed.success) {
-    return { error: parsed.error.errors[0].message }
+    return { error: parsed.error.issues[0].message }
   }
 
   const { error } = await supabase
