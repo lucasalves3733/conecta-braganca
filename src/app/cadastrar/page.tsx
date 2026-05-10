@@ -35,6 +35,11 @@ export default function CadastrarPage() {
     formState: { errors },
   } = useForm<PontoInput>({
     resolver: zodResolver(pontoSchema),
+    defaultValues: {
+      horario_inicio: '08:00',
+      horario_fim: '18:00',
+      dias_semana: 'Segunda a Sexta',
+    }
   })
 
   const lat = watch('latitude')

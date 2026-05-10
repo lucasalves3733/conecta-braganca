@@ -7,8 +7,8 @@ export const pontoSchema = z.object({
   latitude: z.number({ required_error: 'Selecione um ponto no mapa' }),
   longitude: z.number({ required_error: 'Selecione um ponto no mapa' }),
   categoria_id: z.string().uuid('Selecione uma categoria válida'),
-  horario_inicio: z.string().default('08:00'),
-  horario_fim: z.string().default('18:00'),
+  horario_inicio: z.string(),
+  horario_fim: z.string(),
   dias_semana: z.string().min(3, 'Informe os dias de funcionamento'),
 })
 
